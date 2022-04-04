@@ -1,8 +1,7 @@
 @extends('layouts.base')
 
-@section('pageTitle')
-    {{$comic->title}}
-@endsection
+@section('pageTitle',  '{{$comic->title}}')  
+
 
 
 @section('content')
@@ -12,7 +11,7 @@
         <h1>{{$comic->title}}</h1>
         <div><strong>descrizione:</strong> {{$comic->description}}</div>
         <div><strong>immagine:</strong> {{$comic->thumb}}</div>
-        <div><strong>prezzo</strong> {{$comic->prezzo}}</div>
+        <div><strong>prezzo</strong> {{$comic->price}}</div>
         <div><strong>serie:</strong> {{$comic->series }}</div>
         <div><strong>saledate:</strong> {{$comic->sale_date }}</div>
         <div><strong>tipo</strong> {{$comic->type }}</div>
